@@ -1,6 +1,7 @@
 import MiniProfile from './MiniProfile';
 import Posts from './Posts';
 import Stories from './Stories';
+import Suggestions from './Suggestions';
 
 const Feed = () => {
   return (
@@ -19,6 +20,7 @@ const Feed = () => {
           <MiniProfile />
 
           {/* suggestions */}
+          <Suggestions />
         </div>
       </section>
     </main>
