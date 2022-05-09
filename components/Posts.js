@@ -14,7 +14,7 @@ const Posts = () => {
       id: 2,
       username: 'hatakekakashi',
       userImg:
-        'https://static.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png/revision/latest?cb=20200902114417&path-prefix=tr',
+        'https://img03.imgsinemalar.com/images/karakter_buyuk/46534/kakashi-hatake-5.jpg',
       img: 'https://midwestcleanenergycenter.org/wp-img/naruto/why-does-kakashi-hatake-always-wear-a-mask.gif',
       caption: 'New picture',
     },
