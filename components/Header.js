@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import { SearchIcon } from '@heroicons/react/outline';
+import { SearchIcon, PlusCircleIcon } from '@heroicons/react/outline';
+import { HomeIcon } from '@heroicons/react/solid';
 
 const Header = () => {
   return (
-    <div className='flex items-center justify-between max-w-6xl'>
+    <div className='flex items-center justify-between max-w-6xl mx-4 xl:mx-auto'>
       {/* Left */}
       <div className='h-24 w-24 relative hidden lg:inline-grid cursor-pointer'>
         <Image
@@ -31,8 +32,16 @@ const Header = () => {
         />
       </div>
 
-      <h1 className=''>Right side</h1>
       {/* Right */}
+      <div className='flex space-x-4 items-center'>
+        <HomeIcon className='hidden md:inline-flex  h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out' />
+        <PlusCircleIcon className='h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out' />
+        <img
+          src='https://toppng.com/uploads/preview/itachi-is-back-itachi-uchiha-face-11563232968zcoflmkukx.png'
+          alt='user-image'
+          className='h-10 rounded-full cursor-pointer'
+        />
+      </div>
     </div>
   );
 };
