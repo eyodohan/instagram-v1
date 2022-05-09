@@ -1,4 +1,9 @@
-import { DotsHorizontalIcon } from '@heroicons/react/outline';
+import {
+  DotsHorizontalIcon,
+  HeartIcon,
+  ChatIcon,
+  BookmarkIcon,
+} from '@heroicons/react/outline';
 
 const Post = ({ id, img, userImg, caption, username }) => {
   return (
@@ -16,6 +21,15 @@ const Post = ({ id, img, userImg, caption, username }) => {
       </div>
       {/* post image */}
       <img src={img} className='object-cover w-full' alt='' />
+
+      {/* postButtons */}
+      <div className='flex justify-between px-4 pt-4'>
+        <div className='flex space-x-4'>
+          <HeartIcon className='btn' />
+          <ChatIcon className='btn' />
+        </div>
+        <BookmarkIcon className='btn ' />
+      </div>
     </div>
   );
 };
